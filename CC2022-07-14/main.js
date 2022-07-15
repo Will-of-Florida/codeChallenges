@@ -20,4 +20,4 @@ function enough(cap, on, wait) {
       let remainder = cap - on - wait
       return Math.abs(remainder);
     }
-  }
+  } 
