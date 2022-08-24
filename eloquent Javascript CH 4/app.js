@@ -26,23 +26,22 @@
 //     return arr
 // }
 
-let range = function(start, end, step){
-    let arr = []
-    if(step === 0 || 1 || NaN || undefined || null){
-    for(let i = start; i <= end; i++){
-        arr.push(i)
-    }
-}else if(step > 1){
-    for(let i = start; i <= end; i += step){
-        arr.push(i)
-    }
-}else if(step < 0){
-    for(let i = start; i >= end; i += step){
-        arr.push(i)
-    }
-}
-    return arr
-}
+let range = function otherRange(start, end, step) {
+    otherArray = [];
+    if (step == undefined) {
+      step = 1;
+    };
+    if (step > 0) {
+      for (var i = start; i <= end; i += step) {
+        otherArray.push(i);
+      }
+    } else {
+      for (var i = start; i >= end; i += step) {
+        otherArray.push(i);
+      }
+    };
+    return otherArray;
+  };
 
 //PART TWO
 let sum = function(arr){
