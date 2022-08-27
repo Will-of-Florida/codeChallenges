@@ -66,6 +66,7 @@ let sum = function(arr){
 }
 
 
+
 console.log(range(1, 10));
 // → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log(range(2, 5, -1));
@@ -87,9 +88,22 @@ console.log(sum(range(1, 10)));
 // Thinking back to the notes about side effects and pure functions in the previous chapter, which variant do 
 // you expect to be useful in more situations? Which one runs faster?
 
+function reverseArray(array){
+  let reversed = [] //create an empty array to push the reversed values to
+  for (let i = array.length - 1; i >= 0; i--){ //start at the last index and increment down until the first index [0] is reached
+    reversed.push(array[i]) //must be .push(array[i]) to push the values and not the index numbers into the empty array 
+  }
+  return reversed
+}
 
-function reverseArrayInPlace(arrayValue){
-  
+
+function reverseArrayInPlace(arr){
+  for (let i = 0; i < Math.floor(arr.length / 2); i++){
+    let currentArr = arr[i]
+    arr[i] = arr[arr.length - 1 - i]
+    arr[arr.length - 1 - i] = currentArr
+  }
+  return arr
 }
 
 console.log(reverseArray(["A", "B", "C"]));
