@@ -6,11 +6,5 @@
 // Expect large Inputs!
 
 function oddCount(n){
-    let oddNumbers = []
-    for(let i = 0; i <= n; i++){
-      if(i % 2 !== 0){
-        oddNumbers.push(i)
-      }
-    }
-    return oddNumbers.length - 1
+    return Math.floor(n / 2)
   }
