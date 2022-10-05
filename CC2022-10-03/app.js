@@ -21,3 +21,6 @@ function mergeArrays(arr1, arr2) {
     let finalArray = [...new Set(joinedArray)] //using the spread operator with new Set(array) to create a unique array with no duplicates
     return finalArray.sort((a, b) => a - b)
   }
+
+  //Set() is a data structure that holds a collection of values. A value acn be part of a set only once - adding
+  //it again does not have any effect.
