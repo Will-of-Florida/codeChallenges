@@ -22,5 +22,5 @@ function mergeArrays(arr1, arr2) {
     return finalArray.sort((a, b) => a - b)
   }
 
-  //Set() is a data structure that holds a collection of values. A value acn be part of a set only once - adding
+  //Set() is a data structure that holds a collection of values. A value can be part of a set only once - adding
   //it again does not have any effect.
