@@ -45,13 +45,10 @@ class Ship{
       this.crew = crew
     }
     
-    isWorthIt(draft, crew){  
-    let crewWeight = crew * 1.5
-    let determiningWeight = draft - crewWeight
-    if(determiningWeight > 20){
+    isWorthIt(){  
+    if(this.draft - (this.crew * 1.5) >= 20){
       return true
-    }else{
-      return false
     }
+      return false
   }
   }
