@@ -14,3 +14,29 @@ function getCount(str) {
     }
     return vowelCount.length;
   }
+
+//Another Solution
+
+//   function getCount(str) {
+//     var vowelsCount = 0;
+//     var vowels = ["a","e","i","o","u"];
+//     for(var i = 0;i < str.length;i++){
+//       for(var j=0;j<vowels.length;j++){
+//         if(str[i] === vowels[j]){
+//           vowelsCount++;
+//         }
+//       }
+//     }
+    
+//     return vowelsCount;
+//   }
+
+
+//Another Solution
+
+// function getCount(str) {
+//     let vowels = ['a','e','i','o','u'];
+//     return str.split('').filter(letter => {
+//       return vowels.includes(letter)? true : false;
+//     }).length;
+//   }
